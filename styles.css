@@ -72,7 +72,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../pagina-team4/fondp.jpg") 100% / cover no-repeat;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("fondp.jpg") 100% / cover no-repeat;
 }
 .titulo {
     display: flex;
@@ -157,6 +157,15 @@ button:active {
 
 @media (max-width: 915px) {
 
+  html, body {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
     .menu-contenedor {
         padding: 20px;
         margin: 0 50px;
@@ -218,7 +227,9 @@ button:active {
 
 /* ===== MÓVILES PEQUEÑOS (hasta 480px) ===== */
 @media (max-width: 480px) {
-      
+      .titulo{
+        margin-top: 20px;
+      }
   .titulo .txt h1 {
     font-size: 15px;
   }
