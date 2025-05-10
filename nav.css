@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    font-family: serif;
+}
+
+.menu-contenedor {
+    background-color: #000;
+    margin: 0 120px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img {
+    width: 100px;
+}
+.menu-contenedor .enlace ul li {
+    position: relative;
+    float: left;
+}
+.menu-contenedor .enlace ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+}
+.menu-contenedor .enlace ul li a:hover {
+    color: #001aff;
+}
+#menu {
+    display: none;
+}
+.icono-menu {
+    width: 25px;
+}
+.menu-contenedor label {
+    cursor: pointer;
+    display: none;
+}
+
+/* MENÚ DESPLEGABLE EN ESCRITORIO */
+.menu-contenedor .enlace ul li ul {
+    position: absolute;
+    background: #000;
+    display: none;
+    min-width: 180px;
+    z-index: 99;
+}
+.menu-contenedor .enlace ul li:hover > ul {
+    display: block;
+}
+.menu-contenedor .enlace ul li ul li {
+    position: relative;
+}
+.menu-contenedor .enlace ul li ul li ul {
+    left: 100%;
+    top: 0;
+}
+@media (max-width: 915px) {
+    .menu-contenedor {
+        padding: 30px;
+        margin: 0 50px;
+    }
+    .menu-contenedor label {
+        display: initial;
+    }
+    .menu-contenedor .enlace {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    .menu-contenedor .enlace ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .enlace {
+        display: initial;
+    }
+
+    /* Submenús en móvil */
+    .menu-contenedor .enlace ul li ul,
+    .menu-contenedor .enlace ul li ul li ul {
+        position: static;
+        background: #1c1c1c;
+        display: none;
+    }
+
+    .menu-contenedor .enlace ul li:focus-within > ul,
+    .menu-contenedor .enlace ul li:hover > ul {
+        display: block;
+    }
+
+    .menu-contenedor .enlace ul li a {
+        padding-left: 30px;
+    }
+    .menu-contenedor .enlace ul li ul li a {
+        padding-left: 50px;
+    }
+    .menu-contenedor .enlace ul li ul li ul li a {
+        padding-left: 70px;
+    }
+
+    .titulo .txt h1 {
+        font-size: 60px;
+    }
+    .titulo .txt p {
+        font-size: 15px;
+    }
+    .titulo .boton {
+        margin-top: -80px;
+    }
+    button span {
+        font-size: 15px;
+    }
+}
