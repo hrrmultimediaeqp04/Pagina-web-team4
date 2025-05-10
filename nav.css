@@ -4,13 +4,14 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    
 }
 html {
     font-family: serif;
 }
 
 .menu-contenedor {
-    background-color: #000;
+    background-color: transparent;
     margin: 0 120px;
     position: absolute;
     top: 0;
@@ -65,9 +66,15 @@ html {
     left: 100%;
     top: 0;
 }
+
+
+
+
+
 @media (max-width: 915px) {
+
     .menu-contenedor {
-        padding: 30px;
+        padding: 20px;
         margin: 0 50px;
     }
     .menu-contenedor label {

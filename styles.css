@@ -8,8 +8,8 @@
 html {
     font-family: serif;
 }
-
 .menu-contenedor {
+    background-color: transparent;
     margin: 0 120px;
     position: absolute;
     top: 0;
@@ -141,19 +141,33 @@ button:active {
     transform: scale(0.9);
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE */
+
+
 @media (max-width: 915px) {
+
     .menu-contenedor {
         padding: 20px;
-        margin: 0 30px;
+        margin: 0 50px;
     }
     .menu-contenedor label {
         display: initial;
     }
     .menu-contenedor .enlace {
         position: absolute;
-        top: 70%;
-        left: 50;
+        top: 100%;
+        left: 0;
         right: 0;
         background-color: #323337;
         display: none;
@@ -179,16 +193,13 @@ button:active {
     }
 
     .menu-contenedor .enlace ul li a {
-        padding-left: 10px;
+        padding-left: 30px;
     }
     .menu-contenedor .enlace ul li ul li a {
         padding-left: 50px;
     }
     .menu-contenedor .enlace ul li ul li ul li a {
         padding-left: 70px;
-    }
-    header{
-      height: 100vh;
     }
 
     .titulo .txt h1 {
@@ -204,12 +215,10 @@ button:active {
         font-size: 15px;
     }
 }
+
 /* ===== MÓVILES PEQUEÑOS (hasta 480px) ===== */
 @media (max-width: 480px) {
-      .menu-contenedor {
-        padding: 10px;
-        margin: 0 50px;
-    }
+      
   .titulo .txt h1 {
     font-size: 15px;
   }
@@ -228,9 +237,7 @@ button:active {
 
 /* ===== TABLETS (769px a 1024px) ===== */
 @media (max-width: 1024px) {
-  .menu-contenedor {
-    margin: 0 40px;
-  }
+
   .titulo {
     margin-top: 60px;
   }
@@ -241,14 +248,10 @@ button:active {
 
 /* ===== LAPTOPS PEQUEÑAS (1025px a 1280px) ===== */
 @media (max-width: 1280px) {
-  .menu-contenedor {
-    margin: 0 80px;
-  }
+
 }
 
 /* ===== MONITORES GRANDES (más de 1280px) ===== */
 @media (min-width: 1281px) {
-  .menu-contenedor {
-    margin: 0 120px;
-  }
+
 }
