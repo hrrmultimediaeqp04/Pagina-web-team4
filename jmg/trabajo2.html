@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia en la Web</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header, main, section, .audio, .txt {
+      padding: 20px;
+      background-color: #fff;
+      margin: 10px auto;
+      max-width: 1200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    .m_img img {
+      width: 100%;
+      max-width: 800px;
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 10px;
+    }
+
+    .tipo_video {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .tipo_1 {
+      background-color: #fafafa;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .tipo_1:hover {
+      transform: scale(1.03);
+    }
+
+    .tipo_1 img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    .tipo_1 h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .tipo_1 p {
+      font-size: 0.95rem;
+    }
+
+    .audio img, .txt img {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .txt h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .tipo_1 img {
+        width: 60px;
+      }
+
+      .tipo_1 h2 {
+        font-size: 1rem;
+      }
+
+      .tipo_1 p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>La Multimedia en la Web</h1>
+    <p>La multimedia en la web se refiere a la integración de contenido multimedia (imágenes, audio, video, animaciones e interactividad) dentro de sitios web y aplicaciones en línea. Gracias a tecnologías como HTML5, CSS3 y JavaScript, la web ofrece experiencias dinámicas e inmersivas.</p>
+    <div class="m_img">
+      <img src="img/multi.jpg" alt="Ejemplo de multimedia">
+    </div>
+  </main>
+
+  <section>
+    <h1>Tipos de Video</h1>
+    <div class="tipo_video">
+      <div class="tipo_1">
+        <img src="img/formato-de-archivo-de-musica-mp4.png" alt="MP4">
+        <h2>MP4</h2>
+        <p>El formato más común y utilizado para compartir contenido en línea.</p>
+      </div>
+
+      <div class="tipo_1">
+        <img src="img/mpeg.png" alt="MPEG">
+        <h2>MPEG IV</h2>
+        <p>Utilizado en dispositivos con menor capacidad de procesamiento como smartphones.</p>
+      </div>
+
+      <div class="tipo_1">
+        <img src="img/archivo-avi.png" alt="AVI">
+        <h2>AVI</h2>
+        <p>Compatible con todas las plataformas y dispositivos de video convencionales.</p>
+      </div>
+
+      <div class="tipo_1">
+        <img src="img/mov.png" alt="MOV">
+        <h2>MOV</h2>
+        <p>Utilizado principalmente en dispositivos de Apple.</p>
+      </div>
+
+      <div class="tipo_1">
+        <img src="img/mkv.png" alt="MKV">
+        <h2>MKV</h2>
+        <p>Formato libre y de código abierto que permite incluir audio, video y subtítulos.</p>
+      </div>
+
+      <div class="tipo_1">
+        <img src="img/documento.png" alt="FLV">
+        <h2>FLV, F4V y SWF</h2>
+        <p>Formatos usados por Adobe Flash Player, adecuados para integración web.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="audio">
+    <img src="img/FORMATO DE AUDIO.png" alt="Formatos de audio">
+  </div>
+
+  <div class="txt">
+    <h2>Formato de Texto</h2>
+    <img src="img/texto.jpg" alt="Formato de texto">
+  </div>
+</body>
+</html>

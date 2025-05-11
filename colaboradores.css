@@ -11,7 +11,7 @@ html {
 }
 
 .menu-contenedor {
-    ackground-color: rgb(18, 18, 18);
+    background-color: rgb(18, 18, 18);
     margin: 0 120px;
     position: sticky;
     z-index: 4000;
@@ -52,7 +52,7 @@ html {
 /* MENÚ DESPLEGABLE EN ESCRITORIO */
 .menu-contenedor .enlace ul li ul {
     position: absolute;
-    background: #000;
+    background: rgb(18, 18, 18);
     display: none;
     min-width: 180px;
     z-index: 99;
@@ -68,7 +68,7 @@ html {
     top: 0;
 }
 section {
-    margin-top: 90px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,18 +319,19 @@ section {
 @media (max-width: 915px) {
 
     .menu-contenedor {
-        padding: 20px;
-        margin: 0 50px;
+        
+        margin: 0 20px;
     }
     .menu-contenedor label {
         display: initial;
     }
     .menu-contenedor .enlace {
         position: absolute;
+        z-index: 1000;
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #323337;
+        
         display: none;
     }
     .menu-contenedor .enlace ul li {

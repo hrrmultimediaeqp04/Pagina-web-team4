@@ -1,0 +1,32 @@
+    header, main, section, .audio, .txt {
+      padding: 20px;
+      background-color: #fff;
+      margin: 10px auto;
+      max-width: 1200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    main{
+ /*    background-color: #cc00ff; */
+    display: flex;
+    width: 100%;
+    margin: 40px 30px;
+/*     border: #286bcf solid 2px;
+ */}
+ .multimedia{
+    width: 50%;
+    height: 70%;
+    font-size: .6rem;
+    padding: 20px 20px;
+}
+.multimedia h1{
+    margin-bottom: 30px;
+}
+.m_img{
+    width: 50%;
+    height: 100%;
+    margin-top: 20vh;
+}
+.m_img img{
+    width: 100%;
+}
