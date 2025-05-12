@@ -73,7 +73,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("fondp.jpg") 100% / cover no-repeat;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("Cabecera\ Multimedia\ e\ interculturalidad.png") 100% / cover no-repeat;
 }
 .titulo {
     display: flex;

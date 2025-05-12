@@ -199,6 +199,22 @@ section{
         font-size: 16px;
         font-weight: 300px;
     }
+        .vd{
+       width: 100%;
+      max-width: 900px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .vd iframe{
+            width: 100%;
+      
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 10px;
+
+    }
     
 .footer {
     margin-top: 20px;

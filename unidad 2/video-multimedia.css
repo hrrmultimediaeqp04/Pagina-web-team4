@@ -73,7 +73,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("fondp.jpg") 100% / cover no-repeat;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("istockphoto-517188688-612x612.jpg") 100% / cover no-repeat;
 }
 .titulo {
     display: flex;
@@ -163,12 +163,21 @@ header {
     }
 
     /* Video */
-    .video-container {
-      margin-top: 1rem;
-    }
-    video {
-      width: 100%;
+            .vd{
+       width: 100%;
+      max-width: 900px;
+      margin: 20px auto;
+      display: block;
       border-radius: 10px;
+      text-align: center;
+    }
+    .vd iframe{
+      width: 50%;
+      
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 10px;
+
     }
     .footer {
     bottom: 100%;
