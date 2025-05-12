@@ -1,148 +1,183 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Asesorías de Matemáticas</title>
-  <link rel="stylesheet" href="estilos.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    header, main, section {
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-
-    .m_img img,
-    .section img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .intro {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-top: 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .card {
-      background: #ffffff;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      text-align: center;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-    }
-
-    iframe {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    @media (max-width: 600px) {
-      h1, h2, h3 {
-        font-size: 1.2em;
-      }
-
-      main, section {
-        padding: 10px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="trabajo1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-  <main>
+
+    <header>
+        <div class="menu-contenedor">
+        <a href="../index.html" class="logo"><img src="../logo.png" alt="Logo"></a>            
+        <input type="checkbox" id="menu"/>
+        <label for="menu">
+            <img src="../menu.png" class="icono-menu" alt="Menú">
+        </label>
+        <nav class="enlace">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Unidades</a>
+                    <ul>
+                        <li><a href="#">Unidad 1</a>
+                            <ul>
+                                <li><a href="../unidad 1/Fundamentos-M.html">Fundamentos Multimedia</a></li>
+                                <li><a href="../unidad 1/Producción-M.html">Producción Multimedia</a></li>
+                                <li><a href="../unidad 1/Animacion-M.html">Animacion Multimedia</a></li>
+                                 <li><a href="Realidad-V.html">Realidad Virtual</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Unidad 2</a>
+                            <ul>
+                                <li><a href="../unidad 2/Antecedentes-realidad.html">Antecedentes de la realidad virtual</a></li>
+                                <li><a href="../unidad 2/entornos-virtuales.html">Entornos Virtuales</a></li>
+                                <li><a href="../unidad 2/herramientas multimedias.html">Herramientas Multimedia</a></li>
+                             <li><a href="../unidad 2/video-multimedia.html">Herramientas de edición</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Unidad 3</a>
+                            <ul>
+                                <li><a href="#">Unidad 1</a></li>
+                                <li><a href="#">Unidad 2</a></li>
+                                <li><a href="#">Unidad 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Extras</a>
+                     <ul>
+                           
+                    </ul>
+                    </li>
+            </ul>
+        </nav>
+    </div>
+
+        <div class="titulo">
+            <div class="txt">
+                <h1>Formatos</h1>
+        <p>tipos de video, audio, texto etc.</p>
+                  </div>
+        </div>
+    </header> 
+    
+      <main>
     <h1>La Multimedia en la Web</h1>
-    <p>
-      La multimedia en la web se refiere a la integración de contenido multimedia
-      (imágenes, audio, video, animaciones e interactividad) dentro de sitios web
-      y aplicaciones en línea. Gracias a tecnologías como HTML5, CSS3 y JavaScript,
-      la web ofrece experiencias dinámicas e inmersivas.
-    </p>
+    <p>La multimedia en la web se refiere a la integración de contenido multimedia (imágenes, audio, video, animaciones e interactividad) dentro de sitios web y aplicaciones en línea. Gracias a tecnologías como HTML5, CSS3 y JavaScript, la web ofrece experiencias dinámicas e inmersivas.</p>
     <div class="m_img">
-      <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/multimedia-1839026_1280.jpg" alt="Ejemplo de multimedia" />
+      <img src="../img/img/multi.jpg" alt="Ejemplo de multimedia">
     </div>
   </main>
 
-  <section class="intro">
-    <h2>¡Inscríbete ya!</h2>
-    <div class="section">
-      <img src="https://cdn.pixabay.com/photo/2017/08/07/00/16/students-2606648_1280.jpg" alt="Estudiantes en clase" />
-      <h3>Matemáticas (prepa)</h3>
-      <p><strong>Imparte:</strong> (nombre del profesor)</p>
-      <p><strong>Lugar:</strong> Pilares 16 de Septiembre</p>
-      <p><strong>Dirigido a:</strong> Alumnos de preparatoria</p>
-      <p><strong>Cupos disponibles:</strong> 6</p>
+  <section>
+    <h1>Tipos de Video</h1>
+    <p>Un formato de video es la forma en que se organiza y codifica un archivo de video para que pueda ser almacenado, reproducido o transmitido. Este formato está compuesto por dos elementos principales: el contenedor y el códec. El contenedor es la parte del archivo que agrupa todos los componentes del video, como la imagen, el sonido, los subtítulos y otros datos relacionados. Los contenedores más conocidos son MP4, AVI, MKV, MOV y WEBM. Cada uno de estos tiene sus propias características en cuanto a compatibilidad, calidad y peso del archivo.
+
+Por otro lado, el códec es el sistema que comprime y descomprime los datos del video y del audio dentro del archivo. Esta compresión permite que los archivos ocupen menos espacio sin perder demasiada calidad. Algunos de los códecs más comunes son H.264, H.265, VP9 y AV1. El formato final de un video depende de la combinación del contenedor y el códec utilizado. Por ejemplo, un archivo con extensión .mp4 generalmente usa el códec H.264.
+
+La elección del formato de video es importante porque influye directamente en la calidad visual y sonora del archivo, el tamaño del archivo, su compatibilidad con diferentes dispositivos y programas, y su rendimiento en plataformas de reproducción como páginas web o aplicaciones móviles. Por eso, los formatos como MP4 son muy populares, ya que ofrecen un buen equilibrio entre calidad y tamaño, además de ser ampliamente compatibles.
+
+En resumen, el formato de video es fundamental para asegurar que el contenido audiovisual pueda reproducirse correctamente, con buena calidad y en diferentes entornos tecnológicos.</p>
+    <div class="tipo_video">
+      <div class="tipo_1">
+        <img src="../img/img/mp4.png" alt="MP4">
+        <h2>MP4</h2>
+        <p>El formato más común y utilizado para compartir contenido en línea.</p>
+      </div>
+
+      <div class="tipo_1">
+        <img src="../img/img/mpeg.png" alt="MPEG">
+        <h2>MPEG IV</h2>
+        <p>Utilizado en dispositivos con menor capacidad de procesamiento como smartphones.</p>
+      </div>
+
+      <div class="tipo_1">
+        <img src="../img/img/archivo-avi.png" alt="AVI">
+        <h2>AVI</h2>
+        <p>Compatible con todas las plataformas y dispositivos de video convencionales.</p>
+      </div>
+
+      <div class="tipo_1">
+        <img src="../img/img/mov.png" alt="MOV">
+        <h2>MOV</h2>
+        <p>Utilizado principalmente en dispositivos de Apple.</p>
+      </div>
+
+      <div class="tipo_1">
+        <img src="../img/img/mkv.png" alt="MKV">
+        <h2>MKV</h2>
+        <p>Formato libre y de código abierto que permite incluir audio, video y subtítulos.</p>
+      </div>
+
+      <div class="tipo_1">
+        <img src="../img/img/" alt="FLV">
+        <h2>FLV, F4V y SWF</h2>
+        <p>Formatos usados por Adobe Flash Player, adecuados para integración web.</p>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2 style="text-align:center; color: green">RECURSOS</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2017/03/06/22/01/children-2122016_1280.jpg" alt="Primaria" />
-        <h3>Matemáticas (primaria)</h3>
-        <p>Describen fenómenos cotidianos y nos ayudan a entender nuestro entorno.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2016/03/26/22/13/student-1284257_1280.jpg" alt="Secundaria" />
-        <h3>Matemáticas (secundaria)</h3>
-        <p>Estudian las relaciones entre estructuras lógicas y refuerzan el pensamiento crítico.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2018/03/01/14/40/school-3185060_1280.jpg" alt="Preparatoria" />
-        <h3>Matemáticas (preparatoria)</h3>
-        <p>Ayudan a razonar con lógica problemas complejos.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2016/03/27/22/22/student-1283865_1280.jpg" alt="Universidad" />
-        <h3>Matemáticas (universidad)</h3>
-        <p>Permiten modelar el mundo con ecuaciones y funciones.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2020/02/06/10/21/abacus-4824965_1280.jpg" alt="Ábaco" />
-        <h3>Matemáticas en ábaco</h3>
-        <p>Desarrollan habilidades de cálculo mental desde pequeños.</p>
-      </div>
-    </div>
-  </section>
+  <div class="audio">
+    <h1>Formato de audio</h1>
+    <p>Un formato de audio es la estructura digital en la que se guarda un archivo de sonido. Define cómo se codifica y almacena la información del audio para que pueda ser reproducida por distintos dispositivos o programas. Al igual que con el video, los formatos de audio combinan un contenedor con un códec, que es el encargado de comprimir y descomprimir los datos del sonido. Existen formatos comprimidos y sin comprimir, dependiendo de la calidad deseada y del tamaño del archivo.
 
-  <section class="section">
-    <h2>ACERCA DEL TALLER</h2>
-    <p>
-      Las matemáticas nos son indispensables. Describen fenómenos cotidianos y nos ayudan a entender nuestro entorno.
-      Se pueden definir como "la ciencia que estudia las relaciones entre estructuras".
-    </p>
-    <div style="margin-top: 20px;">
-      <iframe src="https://www.youtube.com/embed/lGJbN3vjQ5w" title="Video del taller" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
+Los formatos de audio más utilizados incluyen opciones como MP3, WAV, AAC, FLAC y OGG. Cada uno tiene características particulares. Por ejemplo, el formato MP3 es uno de los más populares por su alta compresión y compatibilidad, aunque pierde algo de calidad. WAV, en cambio, ofrece sonido sin comprimir, lo que garantiza una calidad muy alta, pero con archivos mucho más grandes. AAC es similar a MP3 pero ofrece mejor calidad a igual tasa de bits y es común en servicios de streaming como YouTube. FLAC es un formato comprimido sin pérdida de calidad, ideal para audiófilos que desean conservar el sonido original. OGG es un formato libre y abierto, también usado en juegos o aplicaciones que buscan buena calidad sin pagar licencias.
+
+El formato de audio elegido afecta directamente la calidad del sonido, el espacio de almacenamiento necesario y la compatibilidad con reproductores o plataformas digitales. Por esta razón, es importante seleccionar el formato más adecuado según el uso previsto, ya sea para música, grabaciones, distribución en línea, edición profesional o almacenamiento a largo plazo.</p>
+    <img src="../img/img/FORMATO DE AUDIO.png" alt="Formatos de audio">
+  </div>
+
+  <div class="txto">
+    <h2>Formato de Texto</h2>
+    <p>Un formato de texto es la manera en que se guarda y estructura la información escrita en un archivo digital. Existen distintos tipos de formatos de texto, y cada uno tiene características específicas que determinan cómo se representa el contenido, si se incluye solo texto plano o también información sobre estilos, fuentes, colores, imágenes, tablas y otros elementos de formato.
+
+El formato más simple es el texto plano, conocido como TXT, que solo contiene caracteres sin ningún tipo de formato adicional, como negritas, cursivas o tamaños de letra. Es utilizado principalmente para notas rápidas o archivos que necesitan ser compatibles con cualquier sistema operativo. En cambio, los formatos de texto enriquecido, como RTF (Rich Text Format), permiten incluir estilos básicos como subrayado, colores y diferentes fuentes, manteniendo una estructura sencilla y compatible con muchos programas.
+
+Otros formatos de texto más complejos, como DOC o DOCX de Microsoft Word, permiten una gran variedad de opciones de formato, como insertar imágenes, gráficos, tablas, encabezados y pies de página. Estos archivos están diseñados para tareas de edición más avanzadas y requieren programas específicos para abrirse correctamente. También existen formatos como PDF, que conservan el diseño exacto del documento sin importar en qué dispositivo se abra, lo que los hace ideales para la distribución de contenido finalizado.
+
+Además, hay formatos de texto utilizados en programación o desarrollo web, como HTML, XML, JSON o Markdown, que aunque contienen texto, también incluyen etiquetas o estructuras especiales que permiten organizar datos, definir contenido web o facilitar el intercambio de información entre sistemas.
+
+En resumen, el formato de texto determina cómo se almacena, visualiza y edita el contenido escrito, y su elección depende del propósito del documento, del nivel de formato que se necesite y del programa con el que se trabajará.
+
+
+
+
+
+
+
+</p>
+    <img src="../img/img/texto.jpg" alt="Formato de texto">
+  </div>
+  
+   <footer class="footer">
+        <ul class="social-icon">
+            <li class="icon-elem">
+                <a href="#F" class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="#X" class="icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="#IG" class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="menu-elem">
+                <a href="../index.html" class="menu-icon">Inicio</a>
+            </li>
+            <li class="menu-elem">
+                <a href="../colaboradores.html" class="menu-icon">Colaboradores</a>
+            </li>
+        </ul>
+        <p class="text">@2025 | Todos los derechos reservados</p>
+    </footer>
 </body>
-
 </html>

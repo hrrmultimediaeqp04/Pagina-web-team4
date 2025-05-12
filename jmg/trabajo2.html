@@ -2,174 +2,187 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="trabajo2.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multimedia en la Web</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header, main, section, .audio, .txt {
-      padding: 20px;
-      background-color: #fff;
-      margin: 10px auto;
-      max-width: 1200px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 2rem;
-    }
-
-    p {
-      text-align: justify;
-      margin-bottom: 20px;
-    }
-
-    .m_img img {
-      width: 100%;
-      max-width: 800px;
-      display: block;
-      margin: 0 auto 20px;
-      border-radius: 10px;
-    }
-
-    .tipo_video {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .tipo_1 {
-      background-color: #fafafa;
-      border-radius: 10px;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-
-    .tipo_1:hover {
-      transform: scale(1.03);
-    }
-
-    .tipo_1 img {
-      width: 80px;
-      margin-bottom: 10px;
-    }
-
-    .tipo_1 h2 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #444;
-    }
-
-    .tipo_1 p {
-      font-size: 0.95rem;
-    }
-
-    .audio img, .txt img {
-      width: 100%;
-      max-width: 400px;
-      margin: 20px auto;
-      display: block;
-      border-radius: 10px;
-    }
-
-    .txt h2 {
-      text-align: center;
-      margin-bottom: 10px;
-      font-size: 1.5rem;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      .tipo_1 img {
-        width: 60px;
-      }
-
-      .tipo_1 h2 {
-        font-size: 1rem;
-      }
-
-      .tipo_1 p {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asesorías Matemáticas</title>
+  
 </head>
 <body>
-  <main>
-    <h1>La Multimedia en la Web</h1>
-    <p>La multimedia en la web se refiere a la integración de contenido multimedia (imágenes, audio, video, animaciones e interactividad) dentro de sitios web y aplicaciones en línea. Gracias a tecnologías como HTML5, CSS3 y JavaScript, la web ofrece experiencias dinámicas e inmersivas.</p>
-    <div class="m_img">
-      <img src="img/multi.jpg" alt="Ejemplo de multimedia">
+      <header>
+        <div class="menu-contenedor">
+        <a href="../index.html" class="logo"><img src="../logo.png" alt="Logo"></a>            
+        <input type="checkbox" id="menu"/>
+        <label for="menu">
+            <img src="../menu.png" class="icono-menu" alt="Menú">
+        </label>
+        <nav class="enlace">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Unidades</a>
+                    <ul>
+                        <li><a href="#">Unidad 1</a>
+                            <ul>
+                                <li><a href="../unidad 1/Fundamentos-M.html">Fundamentos Multimedia</a></li>
+                                <li><a href="../unidad 1/Producción-M.html">Producción Multimedia</a></li>
+                                <li><a href="../unidad 1/Animacion-M.html">Animacion Multimedia</a></li>
+                                <li><a href="../unidad 1/Realidad-V.html">Realidad Virtual</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Unidad 2</a>
+                            <ul>
+                                <li><a href="../unidad 2/Antecedentes-realidad.html">Antecedentes de la realidad virtual</a></li>
+                                <li><a href="../unidad 2/entornos-virtuales.html">Entornos Virtuales</a></li>
+                                <li><a href="../unidad 2/herramientas multimedias.html">Herramientas Multimedia</a></li>
+                             <li><a href="../unidad 2/video-multimedia.html">Herramientas de edición</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Unidad 3</a>
+                            <ul>
+                                <li><a href="#">Unidad 1</a></li>
+                                <li><a href="#">Unidad 2</a></li>
+                                <li><a href="#">Unidad 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Extras</a>
+                     <ul>
+                           
+                    </ul>
+                    </li>
+            </ul>
+        </nav>
     </div>
-  </main>
 
-  <section>
-    <h1>Tipos de Video</h1>
-    <div class="tipo_video">
-      <div class="tipo_1">
-        <img src="img/formato-de-archivo-de-musica-mp4.png" alt="MP4">
-        <h2>MP4</h2>
-        <p>El formato más común y utilizado para compartir contenido en línea.</p>
-      </div>
+        <div class="titulo">
+            <div class="txt">
+                <h1>Realidad Virtual</h1>
+                                </div>
+        </div>
+    </header> 
 
-      <div class="tipo_1">
-        <img src="img/mpeg.png" alt="MPEG">
-        <h2>MPEG IV</h2>
-        <p>Utilizado en dispositivos con menor capacidad de procesamiento como smartphones.</p>
-      </div>
 
-      <div class="tipo_1">
-        <img src="img/archivo-avi.png" alt="AVI">
-        <h2>AVI</h2>
-        <p>Compatible con todas las plataformas y dispositivos de video convencionales.</p>
-      </div>
 
-      <div class="tipo_1">
-        <img src="img/mov.png" alt="MOV">
-        <h2>MOV</h2>
-        <p>Utilizado principalmente en dispositivos de Apple.</p>
-      </div>
+  <section class="intro">
+<main>
+<div class="presentacion">
+    <img src="../img/img/realidad.jpg" class="image">
+    <div class="texto">
+        <h1>¿Qué es?</h1>
+        <p>La realidad virtual se podría definir como un sistema informático que genera en tiempo real representaciones de la
+             realidad, que de hecho no son más que ilusiones ya que se trata de una realidad perceptiva sin ningún soporte físico 
+             y que únicamente se da en el interior de los ordenadores. La simulación que hace la realidad virtual se puede referir
+              a escenas virtuales, creando un mundo virtual que sólo existe en el ordenador de lugares u objetos que existen en la
+               realidad. También permite capturar la voluntad implícita del usuario en sus movimientos naturales proyectándolos 
+               en el mundo virtual que estamos generando, proyectando en el mundo virtual movimientos reales. Además, también nos 
+               permite hundirnos completamente en un mundo virtual, desconectando los sentidos completamente de la realidad 
+               teniendo la sensación la persona que está dentro de que la realidad corresponde en el mundo virtual.
+            Las aplicaciones que en la actualidad encontramos de la realidad virtual a actividades de la vida cotidiana son muchas y diversas. Hay que destacar: la reconstrucción de la herencia cultural, la medicina, la simulación de multitudes y la sensación de presencia.
 
-      <div class="tipo_1">
-        <img src="img/mkv.png" alt="MKV">
-        <h2>MKV</h2>
-        <p>Formato libre y de código abierto que permite incluir audio, video y subtítulos.</p>
-      </div>
-
-      <div class="tipo_1">
-        <img src="img/documento.png" alt="FLV">
-        <h2>FLV, F4V y SWF</h2>
-        <p>Formatos usados por Adobe Flash Player, adecuados para integración web.</p>
-      </div>
+La reconstrucción de la herencia cultural consiste en la recuperación a través de la simulación de piezas únicas de la antigüedad
+ que han sido destruidas o se encuentran degradadas. En algunas, a partir de unos pocos restos se pueden simular piezas enteras.
+  Además, la realidad virtual permite mostrar la pieza en perfecto estado en diversos lugares del mundo a la vez, e incluso 
+  permite crear museos enteros con piezas virtuales. La aplicación en la medicina la encontramos en la simulación virtual del 
+  cuerpo humano. A partir de imágenes de nuestro cuerpo, se puede hacer la recreación en 3D del paciente, cosa que facilita la
+   elaboración de un diagnóstico, o la simulación de operaciones en caso que sea necesario.</p>
     </div>
+</div>
+</main>
+
   </section>
 
-  <div class="audio">
-    <img src="img/FORMATO DE AUDIO.png" alt="Formatos de audio">
-  </div>
+  <h1 style="text-align: center; color: rgb(255, 0, 255); font-size: 3rem;">Áreas de Aplicación de la Realidad virtual </h1>
+   <section class="seccion">
+    <div class="card">
+            <img src="../img/img/images (2).jpeg" alt="">
+            <h1>Entretenimiento</h1>
+            <p>
+              La RV revolucionó los videojuegos, ofreciendo experiencias inmersivas y realistas.
+            </p>
+        </div>
+        <div class="card">
+            <img src="../img/img/images (1).jpeg" alt="">
+            <h1>Educación</h1>
+            <p>
+                La RV facilita la enseñanza de conceptos complejos, permitiendo a los estudiantes explorar modelos 3D y simular experimentos. 
 
-  <div class="txt">
-    <h2>Formato de Texto</h2>
-    <img src="img/texto.jpg" alt="Formato de texto">
-  </div>
+            </p>
+        </div>
+        <div class="card">
+            <img src="../img/img/images (3).jpeg" alt="">
+            <h1>Medicina</h1>
+            <p>
+              La RV se utiliza en la formación de cirujanos, en la terapia de fobias, en el tratamiento de trastornos mentales y en la rehabilitación física. 
+
+            </p>
+        </div>
+        <div class="card">
+            <img src="../img/img/images.jpeg" alt="">
+            <h1>Turismo</h1>
+            <p>
+              La RV permite a los usuarios explorar destinos de manera virtual, ofreciendo tours guiados y la posibilidad de visitar museos y sitios históricos sin salir de casa. 
+            </p>
+        </div>
+        <div class="card">
+            <img src="../img/img/aplicaciones-de-la-realidad-virtual-en-el-sector-de-la-construcción.webp" alt="">
+            <h1>Industria</h1>
+            <p>
+La RV se utiliza en el diseño de productos, en la formación de personal, en la simulación de procesos industriales y en la mejora de la seguridad laboral. 
+            </p>
+        </div>
+        <div class="card">
+            <img src="../img/img/07.jpg" alt="">
+            <h1>Marketing</h1>
+            <p>
+La RV se utiliza para crear experiencias inmersivas para los clientes, permitiéndoles explorar productos y servicios de forma interactiva.            </p>
+
+
+        </div>
+  </section> 
+
+  <section class="section">
+    <h2 style="color: rgb(255, 0, 255); font-size: 3rem;">Diferencias realidad virtual y Realidad Aumentada</h2>
+    <p>
+La realidad virtual y la realidad aumentada son tecnologías que transforman la forma en que interactuamos con la información y el entorno, pero lo hacen de manera distinta. La realidad virtual crea un mundo completamente digital, simulado por ordenador, en el que el usuario se sumerge por completo. Para acceder a esta experiencia, normalmente se utilizan dispositivos como gafas o cascos de realidad virtual que bloquean la visión del entorno real. Esto permite al usuario experimentar sensaciones como si estuviera físicamente dentro de un escenario diferente, como caminar por Marte o estar en medio de una batalla en un videojuego.
+
+Por otro lado, la realidad aumentada no reemplaza el entorno real, sino que lo complementa. Esta tecnología añade elementos digitales, como imágenes, sonidos o información en tiempo real, sobre lo que el usuario ve en el mundo físico. Se utiliza comúnmente con cámaras de teléfonos móviles, tabletas o dispositivos especiales como las gafas inteligentes. Un ejemplo claro de RA sería una aplicación que, al apuntar la cámara del móvil a un edificio histórico, muestra datos sobre su historia directamente sobre la imagen del edificio.    </p>
+    <div style="margin-top: 20px;">
+<iframe width="760" height="415" src="https://www.youtube.com/embed/PLpDCK3Zy7Q?si=W6bKTZ-nET6cAYos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+  </section>
+
+   <footer class="footer">
+        <ul class="social-icon">
+            <li class="icon-elem">
+                <a href="#F" class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="#X" class="icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="#IG" class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="menu-elem">
+                <a href="../index.html" class="menu-icon">Inicio</a>
+            </li>
+            <li class="menu-elem">
+                <a href="../colaboradores.html" class="menu-icon">Colaboradores</a>
+            </li>
+        </ul>
+        <p class="text">@2025 | Todos los derechos reservados</p>
+    </footer>
+
+
 </body>
 </html>
+
+

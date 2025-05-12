@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animación y Realidad Virtual</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    font-family: serif;
+}
+
+.menu-contenedor {
+    background-color: transparent;
+    margin: 0 120px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img {
+    width: 100px;
+}
+.menu-contenedor .enlace ul li {
+    position: relative;
+    float: left;
+}
+.menu-contenedor .enlace ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+}
+.menu-contenedor .enlace ul li a:hover {
+    color: #001aff;
+}
+#menu {
+    display: none;
+}
+.icono-menu {
+    width: 25px;
+}
+.menu-contenedor label {
+    cursor: pointer;
+    display: none;
+}
+
+/* MENÚ DESPLEGABLE EN ESCRITORIO */
+.menu-contenedor .enlace ul li ul {
+    position: absolute;
+    background: #000;
+    display: none;
+    min-width: 180px;
+    z-index: 99;
+}
+.menu-contenedor .enlace ul li:hover > ul {
+    display: block;
+}
+.menu-contenedor .enlace ul li ul li {
+    position: relative;
+}
+.menu-contenedor .enlace ul li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+/* PORTADA */
+header {
+    background-position: center bottom;
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("fondp.jpg") 100% / cover no-repeat;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 500px;
+    margin-top: 40px;
+}
+.titulo .txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.txt h1 {
+    font-family: monospace;
+    text-align: center;
+    color: #ffffff89;
+    font-size: 3rem;
+}
+.txt p {
+    padding: 0 70px;
+    text-align: center;
+    color: #ffffff50;
+    margin-top: 29px;
+    font-size: 20px;
+}
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #1a237e;
+    }
+    .icon {
+      color: #1a237e;
+      margin-right: 10px;
+    }
+    .image {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+ 
+.footer {
+    bottom: 100%;
+    margin-top: 20px;
+    border-top: #5e5e5e 5px solid;
+    position: relative;
+    background-color: rgb(68, 70, 73);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+  
+  .icon-elem {
+    list-style: none;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  
+  .icon:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .menu-elem {
+    list-style: none;
+  }
+  .menu-icon {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  
+  .menu-icon:hover {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 915px) {
+  
+
+    .menu-contenedor {
+        margin: 0 20px;
+    }
+    .menu-contenedor label {
+        display: initial;
+    }
+    .menu-contenedor .enlace {
+        position: absolute;
+        z-index: 1000;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    .menu-contenedor .enlace ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .enlace {
+        display: initial;
+    }
+
+    /* Submenús en móvil */
+    .menu-contenedor .enlace ul li ul,
+    .menu-contenedor .enlace ul li ul li ul {
+        position: static;
+        background: #1c1c1c;
+        display: none;
+    }
+
+    .menu-contenedor .enlace ul li:focus-within > ul,
+    .menu-contenedor .enlace ul li:hover > ul {
+        display: block;
+    }
+
+    .menu-contenedor .enlace ul li a {
+        padding-left: 30px;
+    }
+    .menu-contenedor .enlace ul li ul li a {
+        padding-left: 50px;
+    }
+    .menu-contenedor .enlace ul li ul li ul li a {
+        padding-left: 70px;
+    }
+
+    .titulo .txt h1 {
+        font-size: 2rem;
+    }
+    .titulo .txt p {
+        font-size: .9rem;
+    }
+
+    }
+
+
+@media (width < 655px){
+
+
+}
+@media (width < 474px){
+
+    .titulo{
+        width: 90%;
+    }
+    .titulo .txt h1{
+        font-size: 45px;
+    }
+    .titulo .txt p{
+        font-size: 14px;
+    }
+
+}
+
+  </style>
+</head>
+<body>
+
+        <header>
+        <div class="menu-contenedor">
+        <a href="../index.html" class="logo"><img src="../logo.png" alt="Logo"></a>            
+        <input type="checkbox" id="menu"/>
+        <label for="menu">
+            <img src="../menu.png" class="icono-menu" alt="Menú">
+        </label>
+        <nav class="enlace">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Unidades</a>
+                    <ul>
+                        <li><a href="#">Unidad 1</a>
+                            <ul>
+                                <li><a href="Fundamentos-M.html">Fundamentos Multimedia</a></li>
+                                <li><a href="Producción-M.html">Producción Multimedia</a></li>
+                                <li><a href="Animacion-M.html">Animacion Multimedia</a></li>
+                                <li><a href="Realidad-V.html">Realidad Virtual</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Unidad 2</a>
+                            <ul>
+                                <li><a href="../unidad 2/Antecedentes-realidad.html">Antecedentes de la realidad virtual</a></li>
+                                <li><a href="../unidad 2/entornos-virtuales.html">Entornos Virtuales</a></li>
+                                <li><a href="../unidad 2/herramientas multimedias.html">Herramientas Multimedia</a></li>
+                               <li><a href="../unidad 2/video-multimedia.html">Herramientas de edición</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Unidad 3</a>
+                            <ul>
+                                <li><a href="#">Unidad 1</a></li>
+                                <li><a href="#">Unidad 2</a></li>
+                                <li><a href="#">Unidad 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Extras</a>
+                     <ul>
+                           
+                    </ul>
+                    </li>
+            </ul>
+        </nav>
+    </div>
+
+        <div class="titulo">
+            <div class="txt">
+                <h1> La animación y la realidad virtual </h1>            </div>
+        </div>
+    </header>
+
+
+
+<section id="definicion">
+  <h2><i class="fas fa-book-open icon"></i>¿Qué es la Animación y la Realidad Virtual?</h2>
+  <img src="../edw/img/realidad-virtual.jpg" alt="Escena de animación 3D" class="image">
+  <p>La animación y la realidad virtual están 
+estrechamente conectadas, ya que la 
+animación digital es la base para crear 
+entornos inmersivos en la realidad virtual. La 
+animación permite generar mundos 
+tridimensionales interactivos que los usuarios 
+pueden explorar en tiempo real. </p>
+</section>
+
+<section id="impacto">
+  <h2><i class="fas fa-vr-cardboard icon"></i>Impacto de la Animación en la Realidad Virtual</h2>
+  <img src="../img/img/images (1).jpeg" alt="Estudiantes usando VR" class="image">
+  <ul>
+    <li><strong>Interactividad:</strong> Explora entornos virtuales con libertad de movimiento. <br>La animación en realidad virtual no solo presenta imágenes en 
+movimiento, sino que permite a los usuarios interactuar con los elementos del entorno. </li>
+    <li><strong>Inmersión narrativa:</strong> Participa en historias envolventes en primera persona. <br>A diferencia de la animación tradicional, la realidad virtual 
+sumerge al usuario en la historia, permitiendo una experiencia más inmersiva. </li>
+    <li><strong>Experiencia multisensorial:</strong> Integración de sonido, movimiento y gráficos 3D.</li>
+  </ul>
+</section>
+
+<section id="tecnologias">
+  <h2><i class="fas fa-tools icon"></i>Tecnologías Abiertas y Cerradas</h2>
+  <p>Las tecnologías abiertas y cerradas en la animación hacen referencia a los sistemas y 
+herramientas utilizadas para la producción de contenido animado. 
+Por ejemplo una diferencia podría ser de 
+maya(cerrado) y blender(abierto): 
+Maya y Blender son dos de los programas más 
+usados en animación 3D, cada uno con 
+características que se adaptan a distintos perfiles de 
+usuario. En cuanto a la interfaz, Maya ofrece un 
+diseño profesional y personalizable que favorece el 
+trabajo de animadores expertos, mientras que 
+Blender tiene una interfaz más accesible e intuitiva, 
+ideal tanto para principiantes como para usuarios con 
+experiencia. 
+Respecto al flujo de trabajo, Maya utiliza un enfoque 
+tradicional con módulos separados para modelado, 
+animación y renderizado, lo que facilita la 
+organización y colaboración en proyectos. En cambio, 
+Blender integra todo el proceso en una sola interfaz, 
+lo que agiliza el trabajo aunque puede ser confuso 
+para algunos. En el área de modelado, ambos 
+programas son muy potentes. Maya permite 
+modelado NURBS, esculpido y técnicas avanzadas 
+con polígonos, mientras que Blender ofrece 
+esculpido, retopología y modelado procedural, sien</p>
+  <img src="../edw/img/autodesk-maya-logo.png" alt="Logo Maya" class="image">
+  <p><strong>Comparativa:</strong> <em>Blender (abierto) vs Maya (cerrado)</em></p>
+  <h3>Tecnologías Abiertas</h3>
+  <ul>
+    <li><strong>Ejemplos:</strong> Blender, OpenToonz.</li>
+    <li><strong>Ventajas:</strong> Gratuitas, modificables, apoyadas por comunidades.</li>
+  </ul>
+  <h3>Tecnologías Cerradas</h3>
+  <ul>
+    <li><strong>Ejemplos:</strong> Maya, Adobe Animate.</li>
+    <li><strong>Ventajas:</strong> Soporte técnico, estabilidad, enfoque profesional.</li>
+  </ul>
+</section>
+
+<section id="avatares">
+  <h2><i class="fas fa-user-astronaut icon"></i>Avatares y Representación del Usuario</h2>
+  <img src="../edw/img/95295.webp" alt="Avatares en entorno VR" class="image">
+  <ul>
+    <li><strong>Creación de entornos inmersivos </strong> La animación 3D es esencial para diseñar escenarios virtuales realistas y envolventes. 
+Estos entornos se construyen mediante técnicas de modelado y animación que simulan 
+la física y la dinámica del mundo real, permitiendo al usuario interactuar con objetos y 
+espacios de manera natural. La combinación de gráficos animados y tecnologías de 
+seguimiento de movimiento contribuye a una experiencia más auténtica y atractiva. </li>
+    <li><strong>Interacción en tiempo real </strong> A diferencia de las animaciones tradicionales, la RV requiere que las animaciones 
+respondan en tiempo real a las acciones del usuario. Esto implica el uso de sistemas 
+de animación que puedan adaptarse dinámicamente, como el "motion matching", que 
+selecciona y reproduce animaciones basadas en los movimientos del usuario, 
+mejorando la fluidez y realismo de la interacción.</li>
+    <li><strong>Representación de avatares y personajes </strong> En entornos de RV, los usuarios a menudo interactúan a través de avatares animados 
+que reflejan sus movimientos y expresiones. La animación permite que estos avatares 
+se muevan y gesticulen de manera coherente, facilitando una comunicación más 
+efectiva y una mayor sensación de presencia en el entorno virtual. </li>
+  </ul>
+</section>
+
+<section id="aplicaciones">
+  <h2><i class="fas fa-brain icon"></i>Aplicaciones y Herramientas Usadas</h2>
+  <img src="../edw/img/Unreal_Engine_Logo.svg.png" alt="Logo Unreal Engine" class="image">
+  <ul>
+    <li><strong>Educación:</strong> Simuladores quirúrgicos y laboratorios virtuales.</li>
+    <li><strong>Medicina:</strong> Entrenamiento sin riesgos para estudiantes de salud.</li>
+    <li><strong>Entretenimiento:</strong> Juegos inmersivos, cine interactivo, experiencias turísticas virtuales.</li>
+    <li><strong>Motores gráficos:</strong> Unity y Unreal Engine permiten animación fluida en tiempo real.</li>
+    <li><strong>Captura de movimiento:</strong> Mejora la precisión de movimientos en personajes.</li>
+  </ul>
+  <img src="../edw/img/QH7PL4NEKZKMPPG7QLAFQKAMOY.jpg" alt="Traje de captura de movimiento" class="image">
+</section>
+
+        <footer class="footer">
+        <ul class="social-icon">
+            <li class="icon-elem">
+                <a href="#F" class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="#X" class="icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="#IG" class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="menu-elem">
+                <a href="../index.html" class="menu-icon">Inicio</a>
+            </li>
+            <li class="menu-elem">
+                <a href="../colaboradores.html" class="menu-icon">Colaboradores</a>
+            </li>
+        </ul>
+        <p class="text">@2025 | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
