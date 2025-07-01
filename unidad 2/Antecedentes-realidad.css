@@ -51,6 +51,25 @@ html {
     cursor: pointer;
     display: none;
 }
+  /*Texto principal */
+
+  .titulo1 {
+      position: fixed;
+      background-color: #677b01;
+      top: 0%;
+      left: 10;
+      width: 100%;
+      z-index: 1000;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .txt1 h1 {
+      color: #ffffff;
+      font-size: 50px;
+      font-family: monospace;
+      margin: 1;
+    }
 
 /* MENÚ DESPLEGABLE EN ESCRITORIO */
 .menu-contenedor .enlace ul li ul {

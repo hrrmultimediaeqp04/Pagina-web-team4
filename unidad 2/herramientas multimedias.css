@@ -184,7 +184,24 @@ header {
     margin-bottom: 10px;
     font-size: 20px;
   }
+/*Texto principal */
+.titulo1 {
+      position: fixed;
+      background-color: #d3d35e;
+      top: 0%;
+      left: 10;
+      width: 100%;
+      z-index: 1000;
+      padding: 50px;
+      text-align: center;
+    }
 
+    .txt1 h1 {
+      color: #ffffff;
+      font-size: 50px;
+      font-family: monospace;
+      margin: 1;
+    }
   
 /* RESPONSIVE */
 

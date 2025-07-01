@@ -103,6 +103,7 @@ header {
     color: #ffffff89;
     font-size: 3rem;
 }
+
 .txt p {
     padding: 0 70px;
     text-align: center;
@@ -110,7 +111,23 @@ header {
     margin-top: 29px;
     font-size: 20px;
 }
+.titulo1 {
+      position: fixed;
+      background-color: #8e44ad;
+      top: 0%;
+      left: 10;
+      width: 100%;
+      z-index: 1000;
+      padding: 50px;
+      text-align: center;
+    }
 
+    .txt1 h1 {
+      color: #ffffff;
+      font-size: 50px;
+      font-family: monospace;
+      margin: 1;
+    }
 main {
       padding: 2rem;
       max-width: 1200px;
